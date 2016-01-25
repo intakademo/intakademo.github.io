@@ -7536,6 +7536,7 @@ h6 {
 .pane.selected,
 .pane:hover,
 .expanded-menu .pane {
+  background: #000000;
   background: rgba(0, 0, 0, 0.46);
 }
 .pane.selected .pane-content,
@@ -7601,7 +7602,7 @@ h6 {
   text-align: center;
 }
 .pane ul li {
-  display: inline;
+  display: inline-block;
   white-space: nowrap;
   margin: 0 10px;
 }
@@ -7635,8 +7636,8 @@ h6 {
 .show-content .pane img.paging-icons {
   display: inline;
   position: absolute;
-  width: 15px;
-  height: auto;
+  /*width: 15px;*/
+  /*height: auto;*/
   top: 9px;
 }
 .show-content .pane img.paging-icons.next {
