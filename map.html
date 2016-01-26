@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var styleArray = [
+        {
+          featureType: 'all',
+          elementType: 'labels.text.fill',
+          stylers: [{ color: '#000000' }]
+        },{
+          featureType: 'all',
+          elementType: 'labels.text.stroke',
+          stylers: [{ color: '#e6e8d6' }]
+        },{
+          featureType: 'landscape',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#cfdacc'
+            }
+          ]
+        },{
+          featureType: 'water',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#abc3be'
+            }
+          ]
+        },{
+          featureType: 'road',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#e6e8d6'
+            }
+          ]
+        },{
+          featureType: 'poi',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#7d9a97'
+            }
+          ]
+        },{
+          featureType: 'poi.park',
+          elementType: 'geometry',
+          stylers: [
+            {
+              color: '#94b6b4'
+            }
+          ]
+        }
+      ];
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {
+            lat: -33.8611196,
+            lng: 18.4519904
+          },
+          scrollwheel: false,
+          styles: styleArray,
+          zoom: 14
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnkayyH3UfPrA4tnZxW7Y7Go6FvHf0z6A&callback=initMap"
+    async defer></script>
+
+  </body>
+</html>
