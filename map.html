@@ -84,6 +84,9 @@
           stylers: [
             {
               color: '#7d9a97'
+            },
+            {
+              weight: 0
             }
           ]
         },{
@@ -107,11 +110,12 @@
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {
-            lat: -33.8611196,
-            lng: 18.4519904
+            lat: -33.8745673,
+            lng: 18.4824972
           },
           scrollwheel: false,
           styles: styleArray,
+          disableDefaultUI: true,
           zoom: 14
         });
         var pin = {
