@@ -412,7 +412,7 @@
 
 				offsetLeft = $this.offset().left - marginLeft - scrollLeft;
 				offsetTop = $this.offset().top - marginTop - scrollTop;
-				
+
 				// Calculate the offset parent
 				$this.parents().each(function() {
 					var $this = $(this);
@@ -513,6 +513,7 @@
 			}
 		},
 		_repositionElements: function() {
+			console.debug('_repositionElements');
 			var scrollLeft = this._getScrollLeft(),
 				scrollTop = this._getScrollTop(),
 				horizontalOffset,
@@ -610,7 +611,7 @@
 					ticking = true;
 				}
 			};
-			
+
 			this.$scrollElement.bind('scroll.' + this.name, requestTick);
 			requestTick();
 		},
