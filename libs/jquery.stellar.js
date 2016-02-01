@@ -513,7 +513,6 @@
 			}
 		},
 		_repositionElements: function() {
-			console.debug('_repositionElements');
 			var scrollLeft = this._getScrollLeft(),
 				scrollTop = this._getScrollTop(),
 				horizontalOffset,
