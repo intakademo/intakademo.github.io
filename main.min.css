@@ -6070,6 +6070,7 @@ button.close {
   /*.make-xs-column(18);*/
   height: 100%;
 }
+/* TODO: REFACTOR THIS, ASAP! */
 .first-pane,
 .second-pane,
 .third-pane,
@@ -6088,7 +6089,7 @@ button.close {
   width: 16.6667%;
 }
 .show-content .horizontal-scroll-wrapper {
-  width: 150%;
+  width: 152%;
 }
 .overflow-wrapper {
   margin-right: auto;
@@ -6127,6 +6128,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+body.full-width-content {
+  background: transparent;
 }
 h1,
 h2,
@@ -6195,6 +6199,18 @@ h6 {
   top: 0 !important;
   opacity: 1;
   transition: all 0.2s ease;
+}
+.full-width-content .site-nav .navbar-header {
+  opacity: 1;
+  top: 0 !important;
+  background: transparent;
+}
+.full-width-content .site-nav .navbar-header a.navbar-brand {
+  color: #2b3f78 !important;
+  background: no-repeat 19% 50% / 10% url('images/navbar-logo-collapsed.png');
+}
+.full-width-content .site-nav .navbar-header img {
+  display: none !important;
 }
 .site-nav .navbar-brand {
   width: 100%;
@@ -6963,6 +6979,7 @@ article:last-of-type {
 }
 .content-pane article .author {
   margin-bottom: 3em;
+  margin-top: 3em;
 }
 .content-pane article img.preview {
   float: right;
