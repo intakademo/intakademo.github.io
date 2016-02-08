@@ -6071,12 +6071,7 @@ button.close {
   height: 100%;
 }
 /* TODO: REFACTOR THIS, ASAP! */
-.first-pane,
-.second-pane,
-.third-pane,
-.fourth-pane,
-.fifth-pane,
-.sixth-pane {
+.pane {
   position: relative;
   float: left;
   width: 20%;
@@ -6086,10 +6081,10 @@ button.close {
   height: 100%;
 }
 .show-content .pane {
-  width: 16.6667%;
+  width: 14.28571429%;
 }
 .show-content .horizontal-scroll-wrapper {
-  width: 152%;
+  width: 175%;
 }
 .overflow-wrapper {
   margin-right: auto;
@@ -6170,8 +6165,10 @@ h6 {
   color: inherit;
   font-size: inherit;
 }
-.show-content .site-nav .navbar-nav > li > a:hover {
-  color: #0072BC;
+.show-content .site-nav .navbar-nav > li > a:hover,
+.show-content .site-nav .navbar-nav > li > a:focus,
+.show-content .site-nav .navbar-nav > li > a:active {
+  color: #0072BC !important;
 }
 .site-nav a.navbar-brand {
   color: #f8fbf5;
