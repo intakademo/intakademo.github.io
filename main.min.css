@@ -6799,6 +6799,33 @@ section {
 .school-list li {
   margin-top: 2em;
 }
+.typical-visit-list li {
+  text-align: left;
+}
+.btn-light-blue {
+  background: #245c8f;
+  color: #E6E8D5;
+  display: block;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.btn-orange {
+  background: #D65B35;
+  color: #E6E8D5;
+  display: block;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.activity-block {
+  border: 2px solid #d8d8c2;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+.activity-heading {
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
 .school-programs {
   position: relative;
   margin-top: 4em;
