@@ -6826,6 +6826,48 @@ section {
   font-size: 24px;
   letter-spacing: 5px;
 }
+.price-block p {
+  border-bottom: 1px solid green;
+  margin-bottom: 5px;
+}
+.price-block .prices-heading {
+  font-size: 18px;
+  border-bottom: 0;
+}
+.price-block .price {
+  font-weight: bold;
+}
+.faq-question {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 24px;
+  margin: 2em auto;
+}
+.faq-answer p {
+  text-align: left;
+  color: #8b845c;
+}
+.feedback blockquote {
+  border-left: 0;
+  color: #8b845c;
+}
+.feedback blockquote:before {
+  content: '"';
+}
+.feedback blockquote:after {
+  content: '"';
+}
+.feedback .cite {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  font-size: 16px;
+  font-weight: bold;
+}
+.feedback .cite:before {
+  content: '- ';
+}
 .school-programs {
   position: relative;
   margin-top: 4em;
